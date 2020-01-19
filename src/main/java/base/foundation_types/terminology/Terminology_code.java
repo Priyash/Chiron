@@ -8,10 +8,10 @@ import java.util.Set;
 public class Terminology_code {
     private String terminology_id = "";
     private String terminology_version = "";
-    private Set<String> code_string = new HashSet<String>();
+    private String code_string = "";
     private Uri uri = null;
 
-    public Terminology_code(String terminology_id, String terminology_version, Set<String> code_string, Uri uri) {
+    public Terminology_code(String terminology_id, String terminology_version, String code_string, Uri uri) {
         this.terminology_id = terminology_id;
         this.terminology_version = terminology_version;
         this.code_string = code_string;
@@ -26,7 +26,7 @@ public class Terminology_code {
         return terminology_version;
     }
 
-    public Set<String> getCode_string() {
+    public String getCode_string() {
         return code_string;
     }
 
